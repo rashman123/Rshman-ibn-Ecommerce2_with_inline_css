@@ -63,7 +63,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:70px">
 	  <a class="navbar-brand" href="{% url 'store' %}">Ecom</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -80,9 +80,9 @@
 	     	<a href="#"class="btn btn-warning">Login</a>
 	     	
 	     	<a href="{% url 'cart' %}">
-	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}">
+	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}" style="width:25px; display: inline-block; margin-left: 15px;">
 	    	</a>
-	    	<p id="cart-total">{{cartItems}}</p>
+	    	<p id="cart-total" style="display: block; text-align: center; color:#fff; background-color: red; width: 20px; height: 25px; border-radius: 50%; font-size: 14px;">{{cartItems}}</p>
 
 	    </div>
 	  </div>
